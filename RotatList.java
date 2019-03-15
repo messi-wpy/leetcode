@@ -1,6 +1,11 @@
 
 
 public class RotatList {
+    static class ListNode {
+        int val;
+        ListNode next;
+        ListNode(int x) { val = x; }
+    }
     public static void main(String [] args){
         ListNode head ;
         ListNode h=new ListNode(0);
@@ -36,9 +41,4 @@ public class RotatList {
         return head;
 
     }
-}
-class ListNode {
-      int val;
-      ListNode next;
-      ListNode(int x) { val = x; }
 }
