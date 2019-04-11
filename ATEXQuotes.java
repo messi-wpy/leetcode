@@ -7,25 +7,21 @@ public class ATEXQuotes {
         Scanner in=new Scanner(System.in);
         while (in.hasNext()){
             String s=in.nextLine();
-            StringBuilder sb=new StringBuilder(s);
-            int flag=0;
-            for (int i=0;i<sb.length();i++){
-                if (sb.charAt(i)=='"'){
-                        if (flag==0) {
-                            sb.setCharAt(i,'`');
-                            sb.insert(i+1,'`');
-                            flag=1;
-                        }
-                        else {
-                            sb.setCharAt(i,'\'');
-                            sb.insert(i+1,'\'');
-                            flag=0;
-                        }
+            boolean flag=true;
+            for (int i = 0; i <s.length() ; i++) {
+                if (s.charAt(i)=='"'){
+                    if (flag) {
+                        System.out.print("``");
+                        flag =false;
+                    }else {
+                        System.out.print("''");
+                        flag=true;
                     }
-
                 }
+                else
+                    System.out.print(s.charAt(i));
+            }
 
-            System.out.println(sb.toString());
 
         }
 
