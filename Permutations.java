@@ -53,7 +53,7 @@ public class Permutations {
 
     }
 
-    public void swap(int nums,int a,int b){
+    public void swap(int nums[],int a,int b){
         int temp=nums[a];
         nums[a]=nums[b];
         nums[b]=temp;
