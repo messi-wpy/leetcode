@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.HashSet;
 
 public class FirstMissingPositive {
     public static void main(String []args){
@@ -6,14 +7,23 @@ public class FirstMissingPositive {
         System.out.print(Arrays.toString(plusOne(test)));
 
     }
-    public  static  int firstMissingPositive(int[] nums) {
-        int min=1;
-        for (int a:nums
-             ) {
-            if(a>0&&a<=min&&a!=min-1)
-                min++;
+    public int firstMissingPositive(int[] nums) {
+        HashSet<Integer> set=new HashSet<>();
+        int max=0;
+        int res=1;
+        for (int a:nums) {
+            if (a<=0)continue;
+            if (a>max)
+                max=a;
+            set.add(a);
         }
-        return min;
+        while (set.contains(res)){
+            res++;
+        }
+        return res;
+
+
+
     }
     public static int[] plusOne(int[] digits) {
         int n=digits.length;
