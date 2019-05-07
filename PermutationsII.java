@@ -28,6 +28,7 @@ public class PermutationsII {
             for (int i = 0; i < nums.length; i++) {
                 list.add(nums[i]);
             }
+            if (res.contains(list))return;
             res.add(list);
             return;
         }
