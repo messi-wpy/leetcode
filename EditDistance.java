@@ -1,5 +1,7 @@
 package leetcode;
 
+import java.util.List;
+
 public class EditDistance {
     public static void main(String[] args) {
         System.out.println(minDistance("horse","ros"));
@@ -29,7 +31,6 @@ public class EditDistance {
                 }
             }
         }
-
         return dp[l1-1][l2-1];
 
     }
