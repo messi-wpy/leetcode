@@ -6,7 +6,7 @@ import java.util.List;
 public class Combinations {
 
     public List<List<Integer>> combine(int n, int k) {
-        if (k>n)return new ArrayList<>();
+        if (k>n) return new ArrayList<>();
 
         List<List<Integer>>res=new ArrayList<>();
         backtracking(n,k,1,new ArrayList<>(),res);
