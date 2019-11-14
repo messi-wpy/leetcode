@@ -1,4 +1,4 @@
-package leetcode.SwordRefersToOffer;
+package exercise.SwordRefersToOffer;
 
 import java.util.Stack;
 
