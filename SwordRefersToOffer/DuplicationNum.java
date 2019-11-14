@@ -4,7 +4,7 @@ package exercise.SwordRefersToOffer;
  * 剑指offer
  * 数组类2
  */
-public class Array2 {
+public class DuplicationNum {
 
     public boolean duplicate(int numbers[], int length, int[] duplication) {
         if (numbers==null||numbers.length==0)return false;

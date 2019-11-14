@@ -7,10 +7,10 @@ import java.util.Stack;
  * 数组类第一题
  *
  */
-public class Array1 {
+public class ArrayFind {
     public static void main(String[] args) {
         int [][]array={{1,2,3},{4,5,6},{7,8,9}};
-        Array1 a=new Array1();
+        ArrayFind a=new ArrayFind();
         System.out.println(a.Find(10,array));
     }
 
