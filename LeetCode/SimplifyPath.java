@@ -14,10 +14,9 @@ public class SimplifyPath {
         for (int i = 0; i <file.length ; i++) {
             switch (file[i]){
                 case "":
-                    break;
                 case "." :
                     break;
-                case "":
+                case "..":
                     if (!stack.isEmpty()&&!stack.peek().equals("/")){
                         stack.pop();
                     }
