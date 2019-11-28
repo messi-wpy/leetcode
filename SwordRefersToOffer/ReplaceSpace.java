@@ -9,6 +9,9 @@ public class ReplaceSpace {
      * 当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy。
      * @param str
      * @return
+     *
+     * 心得：
+     * 如果从前往后不好遍历，那就想想后往前遍历
      */
 
     public static String replaceSpace(StringBuffer str){
