@@ -10,4 +10,22 @@ public class Fibonacci {
         return Fibonacci(n-1)+Fibonacci(n-2);
     }
 
+    public int Fibonacci2(int n){
+        int res[]={0,1};
+        if (n<2)
+            return res[n];
+
+        long fibonacci1=0;
+        long fibonacci2=1;
+
+        long result=0;
+        for (int i = 2; i <=n ; i++) {
+            result=fibonacci1+fibonacci2;
+            fibonacci1=fibonacci2;
+            fibonacci2=result;
+
+        }
+
+        return (int)result;
+    }
 }
