@@ -4,6 +4,8 @@ import com.sun.source.tree.Tree;
 import exercise.LeetCode.TreeNode;
 
 import java.util.ArrayDeque;
+import java.util.Deque;
+import java.util.LinkedList;
 
 public class BinaryTreeTravel {
 
@@ -18,7 +20,7 @@ public class BinaryTreeTravel {
         root.left.right.right=new TreeNode(8);
 
         BinaryTreeTravel travel=new BinaryTreeTravel();
-        travel.postOrder2(root);
+        travel.levelTravel(root);
 
     }
 
@@ -134,5 +136,27 @@ public class BinaryTreeTravel {
         }
 
     }
+
+    public void levelTravel(TreeNode root){
+        Deque<TreeNode>queue=new LinkedList<>();
+        if (root==null)
+            return;
+
+        queue.offer(root);
+        while (!queue.isEmpty()){
+            TreeNode cur=queue.poll();
+            travel(cur);
+            if (cur.left!=null){
+                queue.offer(cur.left);
+            }
+            if (cur.right!=null)
+                queue.offer(cur.right);
+
+
+        }
+
+    }
+
+
 
 }
