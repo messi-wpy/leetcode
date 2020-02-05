@@ -2,6 +2,13 @@ package exercise.SwordRefersToOffer;
 
 import exercise.LeetCode.ListNode;
 
+/**
+ * 《剑指offer》
+ * 22
+ * 链表的倒数第k个节点
+ * 两个指针
+ *
+ */
 public class FindKthToTail {
 
     public ListNode FindKthToTail(ListNode head, int k) {
