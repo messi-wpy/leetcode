@@ -10,7 +10,7 @@ public class IndexOfNumber {
         int n=1;
         while (true){
             int amount=getAmount(n);
-            if (index>amount){
+            if (index>=amount){
                 index-=amount;
                 n++;
                 continue;
