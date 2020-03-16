@@ -5,13 +5,7 @@ import java.util.List;
 
 public class Learn {
     public static void main(String[] args) {
-        ArrayList<Integer>list=new ArrayList<>();
-        Fruit[] fruit = new Apple[10];
-        fruit[0] = new Apple();
-        List<Fruit> flist = new ArrayList<>();// 编译错误
-        flist.add(new Apple());
-        flist.add(new Jonathan());
-        flist.add(new Orange());
+        System.out.println(1<<30);
 
 
 
