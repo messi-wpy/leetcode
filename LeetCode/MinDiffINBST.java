@@ -1,11 +1,13 @@
 package exercise.LeetCode;
 
+
 public class MinDiffINBST {
     TreeNode pre;
     int res=Integer.MAX_VALUE;
     public int minDiffInBST(TreeNode root) {
         help(root);
         return res;
+
     }
 
     public void help(TreeNode root){
@@ -17,7 +19,7 @@ public class MinDiffINBST {
         pre=root;
 
         help(root.right);
-
+        String s;
 
     }
 }
